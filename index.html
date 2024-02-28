@@ -9,20 +9,23 @@
 </head>
 <body>
     <!-- zakladki -->
-    <div class="container">
+    <header>
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="">Home</span></a></li>
+                    <li><a href="index.html">Home</span></a></li>
                     <li><a href="">Contact</span></a></li>
                 </ul>
             </nav>
-            <div class="welcome" style="text-align: center;">Welcome to our magnets store!</div>
-            <div class="cart">
-                <!-- <img src="images/cart.png" alt="cart"> -->
-            </div>
+            <h5>Welcome to our magnets store!</h5>
+            <a href="cart.html"><p>cart_image</p></a>
+            <!-- <button class="cart-button"><img src="images/shopping-cart.png" alt="cart" class="cart"></button> -->
+            <!-- <a href="cart.html"><img src="images/shopping-cart.png" alt="cart" class="cart"></a> -->
+            <!-- <div class="cart">
+                <img src="images/shopping-cart.png" alt="cart" class="cart">
+            </div> -->
         </div> 
-    </div>
+    </header>
     <div class="row">
         <div class="col-2">
             <h2>Transform your fridge into a gallery of memories with our enchanting fridge magnets!</h2>
@@ -44,11 +47,20 @@
         <span>Once the order is placed, we will print, cut, pack and ship your order. You will receive a confirmation email with tracking. </span>
 
         <p>4. Enjoy your gallery of memories!</p>
-    </div>
-    <div class="footer">
-        <p> ©2024 magnet shop, all rights reserved</p>
-    </div>
 
+        <button class="order-button-white" onclick="redirectToProductPage()">Order now</button>
+    </div>
+    <div class="contact">
+        <h2>Contact us</h2>
+        <p>Phone: 123 456 789</p>
+        <p>Email: example@gmail.com </p>
+        <p>Adress: Warsaw, street something</p>
+    </div>
+    <footer>
+        <div class="footer">
+            <p> &copy;2024 magnet shop, all rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
 <script>
