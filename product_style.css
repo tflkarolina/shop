@@ -1,0 +1,148 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+
+.navbar nav ul{
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+}
+
+.navbar nav ul li{
+    margin-left: 20px;
+}
+
+.navbar ul li a:hover {
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.navbar h5 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.cart{
+    height: 3.5%;
+    width: 3.5%;
+    border: none;
+}
+
+.cart-button {
+    border: none;
+    cursor: pointer;
+}
+  
+/* .cart{
+    flex:1;
+    text-align: right;
+} */
+
+a{
+    color: #555;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+p{
+    color: #555;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+span{
+    color: #555;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.sproduct input:focus{
+    outline: none;
+}
+
+
+
+.upload-button-white{
+    font-family: Jost;
+    font-weight: 100;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border: solid #555555 2px;
+    box-shadow: rgb(85, 85, 85) 3px 0px 50px 0px;
+    border-radius: 50px;
+    transition : 551ms;
+    transform: translateY(0);
+    cursor: pointer;
+    margin: 30px 0;
+
+    opacity: 1;
+}
+
+.upload-button-white:hover{
+    transition : 551ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #cab4ab;
+    color: #000000;
+    border: solid 2px #555555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    text-align: center;
+    padding-left: 20px;
+    background-color: #d0c9c6;
+    padding: 20px 0;
+}
+
+footer {
+    background-color:#8d8b8b;
+    text-align: center;
+    padding: 1px 0;
+}
+
+footer p{
+    color: #fff;
+}

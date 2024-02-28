@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="product_style.css">
+    <title>Upload Photos</title>
+    <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
-    <title>Magnets</title>
 </head>
 <body>
     <header>
@@ -27,30 +25,30 @@
             </div> -->
         </div> 
     </header>
-    
-    <!-- <div class="row">
 
-    </div> -->
-    <section class="container sproduct my-5 pt-5 ">
-        <div class="row mt-5">
-            <!-- left -->
-            <div class="col-lg-5 col-md-12 col-12">
-                <img class="img-fluid w-60 h-100" src="images/magnets.webp" alt="photos of magnets">
-            </div>
-            <!-- right -->
-            <div class="col-lg-6 col-md-12 col-12">
-                <h6>OUR PRODUCT</h6>
-                <h3 class="py-4">Custom Photo Magnets - 
-                    set of 9</h3>
-                <h2>70zł</h2>
-                <input type="number" value="1">
-                <button class="upload-button-white" onclick="redirectToUploadingPhotosPage()">Upload photos</button>
-                <h4 class="mt-5 mb">Product Details</h4>
-                <p>Square 63mm*63mm magnets</p>
-                <p>Set of 9</p>
-            </div>
-        </div>
+    <section class="upload-photos">
+
+
+        <h1>Upload your photos</h1>
+        <p>Upload your photos to create your custom magnets</p>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple>
+            <label for="file"><span>Choose a file</span></label>
+            <button type="submit" name="submit" class="upload-button">Upload</button>
+        </form>
+<!-- 
+        panel - 9 kwadratow
+        panel - kwadrat do przycinania zdjec -->
     </section>
+
+
+
+
+
+
+
+
+
 
     <div class="contact">
         <h2>Contact us</h2>
@@ -64,15 +62,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
-<script>
-    function redirectToUploadingPhotosPage() {
-        window.location.href = "upload-photos.html";
-    }
-
-    function scrollToContactAndFooter() {
-        var footer = document.getElementById('footer');
-        footer.scrollIntoView({ behavior: 'smooth' });
-    }
-</script>
