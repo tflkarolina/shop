@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</span></a></li>
-                    <li><a href="">Contact</span></a></li>
+                    <li><a href="#" onclick="scrollToContactAndFooter()">Contact</span></a></li>
                 </ul>
             </nav>
             <h5>Welcome to our magnets store!</h5>
@@ -35,7 +35,7 @@
             <img src="images\magnets_home.webp" alt="magnets">
         </div>
     </div>
-    <div class="content" style="text-align: center;">
+    <div class="content" id="contact" style="text-align: center;">
         <h2>How does it work?</h2>
         <p>1. Upload Your Pictures</p>
         <span>Upload your pictures from Camera Roll, edit and preview the pictures before submitting them. If you place an order, you will need to upload 9 pictures. </span>
@@ -57,7 +57,7 @@
         <p>Adress: Warsaw, street something</p>
     </div>
     <footer>
-        <div class="footer">
+        <div class="footer" id="footer">
             <p> &copy;2024 magnet shop, all rights reserved</p>
         </div>
     </footer>
@@ -66,5 +66,10 @@
 <script>
     function redirectToProductPage() {
         window.location.href = "product.html";
+    }
+
+    function scrollToContactAndFooter() {
+        var footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
